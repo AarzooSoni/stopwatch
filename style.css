@@ -1,0 +1,78 @@
+
+/* Google fonts to display the font family */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Noto+Sans:wght@300&family=Pangolin&family=Roboto+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added box-sizing for better layout control */
+}
+
+/* Background color of the web page */
+body {
+    background-color: #edeaff;
+}
+
+/* Heading style for the name */
+#name {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    font-family: 'Courier Prime', monospace; /* Changed font-family to Courier Prime */
+    font-weight: bold;
+    color: blueviolet;
+}
+
+/* Styling of the container which contains the Stopwatch */
+.container {
+    height: 60vh;
+    width: 60vw;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    margin-top: 30px;
+    border: 3px solid #fffff1;
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 20px;
+    background: linear-gradient(rgba(38, 23, 41, 0.8), rgba(53, 42, 46, 0.8)), url(images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(104, 19, 19, 0.5); /* Increased box-shadow for a more pronounced effect */
+}
+
+/* This styling is for the timer */
+.container h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 50px auto; /* Adjusted margin for better alignment */
+}
+
+/* Styling for the various buttons */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; /* Added margin-top for spacing */
+}
+
+/* Setting the width and margin of the buttons */
+.buttons img {
+    width: 60px;
+    cursor: pointer;
+    margin: 0 15px; /* Reduced margin for closer button alignment */
+    transition: transform 0.3s ease-in-out; /* Added transition for smoother hover effect */
+}
+
+/* On hover scale the buttons */
+.buttons img:hover {
+    transform: scale(1.1); /* Increased scale for hover effect */
+}
+
+/* Increasing the width of Play button to differentiate it with others */
+.buttons img:nth-child(2) {
+    width: 80px;
+}
